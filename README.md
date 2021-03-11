@@ -1,7 +1,31 @@
-# react_template
+# React Application Template
 
-This project is to aimed at creating a template for a full-stack application using React for the front end and NodeJS for the backend, that can deployed in an EC2 instance as a web
-server that can be connected to a database server easily.
+This project is a boilerplate template for a React framework for the Front-End, and a NodeJS Back-End that can be run on EC2 instances on the AWS Cloud. The goal in this project is create a template to be re-used multiple times to run web applications to satisfy customers around the world.
+
+# Description
+
+Our mission is deliver the highest products
+
+# Technical Architecture
+
+This project will include certain serverless technologies too
+API Gateway
+Lambda
+DynamoDB
+EC2
+Elastic Load Balancer
+AutoScaling
+RDS
+
+# How To Navigate
+
+To run the project on the server, you cd to the App directory, then type npm start.
+The application then will run as expected. However, if you modified the frontend.
+
+# Version
+
+0.1
 
 ## Author
+
 Abdullah Najjar
