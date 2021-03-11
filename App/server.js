@@ -5,7 +5,7 @@ const PORT = 8000;
 const server = app.listen(PORT);
 
 //To point the server to render the build file for the frontend
-app.use(express.static(path.join(__dirname, "client","build")));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 //specifying which port to run the server
 server.on('listening', () => {
