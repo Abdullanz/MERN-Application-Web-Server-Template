@@ -1,21 +1,24 @@
 const express = require('express')
 const app = express()
 const path = require("path")
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 const server = app.listen(PORT);
 const bodyParser = require('body-parser'); // This is used to create middlewares to handle objects
 
 //TODO: FIX THE ROUTING ISSUE FOR THE CAR COMPONENT!
 
+//To handle JSON Objects specifically
 app.use(bodyParser.json());
+
+//To set up the body parser
 app.use(bodyParser.urlencoded({ extended: true }));
 
-//GET request
+//GET request and the response
 app.get('/api/hello', (req, res) => {
   res.send({ express: 'Hello From Express' });
 });
 
-//POST request
+//POST request and the response
 app.post('/api/world', (req, res) => {
   console.log(req.body);
   res.send(

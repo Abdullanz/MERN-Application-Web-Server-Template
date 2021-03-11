@@ -1,6 +1,5 @@
 import './App.css';
 import React, { Component } from 'react';
-// import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import Car from './components/car.js';
 // import Home from './Home';
 
@@ -57,6 +56,6 @@ class App extends Component {
         <p>{this.state.responseToPost}</p>
       </div>
   );
-}
-}
+}}
+
 export default App;
