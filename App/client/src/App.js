@@ -1,16 +1,29 @@
+//==============================================================================================================
+// FileName: App.js
+// Date: 12 March, 2021
+// Description: This file 
+// Author: Abdullah Najjar
+//==============================================================================================================
+
 import './App.css';
 import React, { Component } from 'react';
-// import Car from './components/car.js';
-// import Home from './Home';
+// import {
+//   BrowserRouter as Router,
+//   Switch,
+//   Route,
+// } from 'react-router-dom';
 
 class App extends Component {
 
-    state = {
+  //This state 
+  state = {
     response: '',
     post: '',
     responseToPost: '',
   };
 
+
+  //Call this after rendering the client side
   componentDidMount()
   {
     this.callApi()
@@ -18,6 +31,7 @@ class App extends Component {
       .catch(err => console.log(err));
   }
 
+  //This function
   callApi = async () => {
     const response = await fetch('/api/hello');
     const body = await response.json();
@@ -25,6 +39,7 @@ class App extends Component {
     return body;
   };
 
+  //This function is to show
   handleSubmit = async e => {
     e.preventDefault();
     const response = await fetch('/api/world', {

@@ -1,11 +1,25 @@
+//==============================================================================================================
+// FileName: server.js
+// Date: 12 March, 2021
+// Description: This file is the server file that contains the main elements for the backend of this application
+// Author: Abdullah Najjar
+//==============================================================================================================
+
+//TODO: Fix the routing configurations using Axios library
+
 const express = require('express')
 const app = express()
 const path = require("path")
 const PORT = process.env.PORT || 8000;
 const server = app.listen(PORT);
 const bodyParser = require('body-parser'); // This is used to create middlewares to handle objects
+const cors = require('cors');
 
-//TODO: FIX THE ROUTING ISSUE FOR THE CAR COMPONENT!
+//Call the routes 
+const testAPIRouter = require("./Routes/TestAPI");
+
+//To enable CORS for the applications' apis
+app.use(cors());
 
 //To handle JSON Objects specifically
 app.use(bodyParser.json());
@@ -33,6 +47,9 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 app.get('*', function(req, res) {
     res.sendFile(path.join(__dirname, 'client/build', 'index.html'));
 });
+
+//Routes for the applications backend
+app.use("/testAPI", testAPIRouter);
 
 //specifying which port to run the server
 server.on('listening', () => {
