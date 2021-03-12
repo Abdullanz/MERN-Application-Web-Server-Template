@@ -5,7 +5,7 @@
 // Author: Abdullah Najjar
 //==============================================================================================================
 
-//TODO: Fix the routing configurations using Axios library
+//TODO: Setup routing using Axios in the frontend and the backend
 
 const express = require('express')
 const app = express()
