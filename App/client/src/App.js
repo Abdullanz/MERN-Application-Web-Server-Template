@@ -6,9 +6,8 @@
 //==============================================================================================================
 
 import './App.css';
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Button from 'react-bootstrap/Button';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './pages/Home';
 import Car from './pages/car';

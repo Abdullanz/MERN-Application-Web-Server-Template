@@ -1,10 +1,18 @@
+//==============================================================================================================
+// FileName: footer.js
+// Date: 13 March, 2021
+// Description: This component contains the footer for the application
+// Author: Abdullah Najjar
+//==============================================================================================================
+
 import React from "react";
-// import { Button, Nav, Navbar } from "react-bootstrap";
 
 const Footer = () => {
     return (
         <div>
-            <p>Footer is working!</p>
+            <footer  className="page-footer font-small mdb-color pt-3">
+                <p>Abdullah Najjar Confidential 2021</p>
+            </footer>
         </div>
     );
 };

@@ -1,11 +1,26 @@
+//==============================================================================================================
+// FileName: header.js
+// Date: 13 March, 2021
+// Description: This component contains the header for the application
+// Author: Abdullah Najjar
+//==============================================================================================================
+
 import React from "react";
-// import { Button, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 
 
 const Header = () => {
     return (
         <div>
-            <p>Header is working!</p>
+    <Navbar bg="dark" expand="lg" variant="dark">
+      <Navbar.Brand href="/">
+      Sample React Project
+    </Navbar.Brand>
+      <Nav className="mr-auto">
+        <Nav.Link href="/">Products</Nav.Link>
+        <Nav.Link href="/">MyProfile</Nav.Link>
+      </Nav>
+    </Navbar>
         </div>
     );
 };
