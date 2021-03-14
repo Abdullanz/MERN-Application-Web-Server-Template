@@ -33,6 +33,10 @@ CSR
 Axios
 Routing
 
+# Testing
+
+Using Jest
+
 
 # Version
 
