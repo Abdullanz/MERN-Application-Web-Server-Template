@@ -15,6 +15,13 @@ const server = app.listen(PORT);
 const bodyParser = require('body-parser'); // This is used to create middlewares to handle objects
 const cors = require('cors');
 // const db = require("./Models");
+var AWS = require("aws-sdk");
+
+
+//AWS Configurations
+AWS.config.update({region: 'us-east-1'});
+console.log("Region: ", AWS.config.region);
+
 
 //Call API routes 
 const testAPIRouter = require("./Routes/TestAPI");
