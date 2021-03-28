@@ -53,6 +53,7 @@ class Home extends Component {
   render() {
   return (
         <div>
+          <Header/>
         <p>{this.state.response}</p>
         <form onSubmit={this.handleSubmit}>
           <p>
@@ -66,6 +67,7 @@ class Home extends Component {
           <button type="submit">Submit</button>
         </form>
         <p>{this.state.responseToPost}</p>
+          <Footer/>
       </div>
   );
 }}

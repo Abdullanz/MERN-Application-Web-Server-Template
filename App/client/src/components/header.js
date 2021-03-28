@@ -14,11 +14,11 @@ const Header = () => {
         <div>
     <Navbar bg="dark" expand="lg" variant="dark">
       <Navbar.Brand href="/">
-      Sample React Project
+      Sample Project
     </Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link href="/">Products</Nav.Link>
-        <Nav.Link href="/">MyProfile</Nav.Link>
+        <Nav.Link href="/products">Products</Nav.Link>
+        <Nav.Link href="/about">About</Nav.Link>
       </Nav>
     </Navbar>
         </div>

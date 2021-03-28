@@ -8,7 +8,7 @@ Cloud Adoption goes through several phases before reaching its full potential wi
 
 Following this top-down approach, an application modernization strategy must be implemented to include features like supporting cost optimazation, and performance improvement... 
 
-Mircoservices, Conway's law, Data Management
+keywords: Mircoservices, Conway's law, Data Management
 
 The application is going to be stright-forward, it will include RESTful Routing capabilities with CRUD operations that works for a certain product. Also, the application will be connected to the API Gateway service that has Lambdas connected to it for additional feature. It will then deployed on an EC2 as a web server, with an ALB, Autoscaling capabilities, and try to implement the best practices on it for training purposes in the future.
 

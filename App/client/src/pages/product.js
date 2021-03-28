@@ -9,16 +9,16 @@ import React from 'react';
 import Header from '../components/header';
 import Footer from '../components/footer';
 
-class Car extends React.Component {
+class Product extends React.Component {
   render() {
     return (
       <div>
         <Header/>
-        <h2>Hi, I am a Car!</h2>
+        <h2>Hi, I am your product a Car!</h2>
         <Footer/>
       </div>
       )
   };
 };
 
-export default Car;
+export default Product;
