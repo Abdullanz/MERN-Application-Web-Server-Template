@@ -1,4 +1,4 @@
-# Web Server for a MERN Application Template
+# MERN Application Web Server Template
 
 This is a boilerplate template for a Web-Server that contains the basic infrastructure of a MERN Web Application which can be deployed on an EC2 instance using the AWS platform and probably on servers from other cloud providers. The main objective behind this project is to create a template for a Web-Server that is easily scalable, and replicatable using the MERN technology stack. While having the capability to connect to clients' data centers for the hybrid cloud model or  to be modernized using containers, and serverless services provided by cloud providers like AWS. Finally, This project is a way for me to understand the best practices for deploying Web-Servers through AWS Well-Architected framework.
 
@@ -18,17 +18,12 @@ Finally,
 
 Add image
 
+Nginx
 Google Analytics
-API Gateway
-Lambda
-EC2
-Elastic Load Balancer
-AutoScaling
 
 # How To Navigate
 
-Navigating the Back-end 
-
+Navigating the Back-end
 Navigating the Front-end
 
 
@@ -40,7 +35,7 @@ After that type npm run build, which will update the frontend build file, and th
 # MERN Stack
 
 MongoDB (v. )
-Express (v. )
+Express (v. 4.17.1)
 React (v. )
 NodeJS (v. )
 
